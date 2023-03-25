@@ -22,9 +22,9 @@
 
 .picTitle {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    width: 50%;
+    width: 100%;
 
 
 
@@ -37,6 +37,7 @@
     height: 120px;
     border-radius: 10px;
     object-fit: cover;
+    margin-right: 30px;
 }
 
 .picTitle>h1 {
@@ -124,4 +125,45 @@ p {
 .cal>i,.cal>p{
     font-size: 12px;
 }
+
+
+@media only screen and (max-width:1200px){
+    .picTitle>img {
+        width: 80px;
+        height: 80px;
+        
+    }
+    
+    .picTitle>h1 {
+        
+        font-size: 35px;
+        
+    }
+    .cal {
+        
+        border-radius: 15px;
+        
+        padding: 0px 1px 0px 1px;
+       
+        
+    
+    
+    }
+
+    
+    
+}
+@media only screen and (max-width:700px){
+    .detailHero{
+        flex-direction: column;
+        height:400px;
+        flex-wrap:nowrap;
+        align-items:flex-start;
+    }
+    .Change{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
 

@@ -96,3 +96,10 @@ option {
 
 
 }
+
+
+@media only screen and (max-width:1200px){
+    .sub{
+        width: 50%;
+    }
+}
