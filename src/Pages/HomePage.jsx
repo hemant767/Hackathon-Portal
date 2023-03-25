@@ -13,7 +13,7 @@ import CardContainer from '../Components/CardContainer'
 const HomePage = () => {
 
   const [favStatus, setFavStatus] = useState(false)
-  const [searchTerm, setSearchTerm] = useState()
+  const [searchTerm, setSearchTerm] = useState("")
   const [sortStatus, setSortStatus] = useState(true)
   const [orgData, setOrgData] = useState([])
   const [data, setData] = useState([])
