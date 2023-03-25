@@ -76,27 +76,26 @@ const Basic = () => {
   console.log(dataProvider())
 
   const current=new Date()
-  const time = current.toLocaleString("en-US",{
-    day:"2-digit",
-    month:"short",
+  const time = current.getTime()
+    
    
-  })
+ 
 
   console.log(time);
 
   
  
   const initialValues={
-            title: '',
-            summary: '',
-            description:'',
+            title: 'Project 1',
+            summary: 'Heifhdk edbhufhiweu freufhyukislfu',
+            description:'fcyhjgdbeifu 3wyjh3fruke4hyvufkc u3444wfjuyhbyuyb4uygfutyh 3ruwyf',
             coverImage: null,
-            HackathonName: '',
-            hackathonStartDate: '',
-            hackathonEndDate: '',
-            GithubLink: '',
+            HackathonName: 'Vsytadguihwe',
+            hackathonStartDate: '2022-11-08',
+            hackathonEndDate: '2022-11-10',
+            GithubLink: 'www.abc.com',
             OtherLinks: '',
-            submissionDate:'',
+           
   }
 
   const statusToggler=()=>{
@@ -107,10 +106,10 @@ const Basic = () => {
   }
 
 
-  const fileName=(name)=>{
-      const a = name.split("/")[3]
-      return a.split(".")[0] +"."+ a.split(".")[2]
-  }
+  // const fileName=(name)=>{
+  //     const a = name.split("/")[3]
+  //     return a.split(".")[0] +"."+ a.split(".")[2]
+  // }
   
 
   
@@ -132,8 +131,9 @@ const Basic = () => {
           onSubmit={async (values) => {
             await new Promise((r) => setTimeout(r, 500));
 
-            console.log(values);
+            
             values.submissionDate=time
+            console.log(values);
 
             if (edit) {
               editById(pid, values)
@@ -141,8 +141,9 @@ const Basic = () => {
               values.id = uuid();
               addDetail(values);
             }
-            navigate("/")
             console.log(dataProvider())
+            navigate("/")
+            
               
             
 
@@ -177,7 +178,7 @@ const Basic = () => {
               {!imgStatus && edit ?(<div className='imgPreview'>
               <div className='Preview'>
                 <img src={data.coverImage} style={{"object-fit":"cover","border-radius":"2px"}} width="50" height="50"/>
-                <span>{fileName(data.coverImage)}</span>
+                {/* <span>{fileName(data.coverImage)}</span> */}
               </div>
               <div className='upload'>
                 <button>Reupload<i style={{"margin-left":"5px"}} class="fa fa-cloud-upload" aria-hidden="true"></i></button>

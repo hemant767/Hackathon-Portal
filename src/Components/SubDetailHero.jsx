@@ -20,6 +20,12 @@ const SubDetailHero = ({coverImage,title,summary,id,fav,submissionDate}) => {
     
     
  }
+ const dateFormatter=(d)=>{
+    d=new Date(d)
+    d=d.toString()
+    d=d.split(" ")[1] + " " + d.split(" ")[2]
+    return d
+ }
 
 
  const handleDelete=()=>{
@@ -62,7 +68,7 @@ const SubDetailHero = ({coverImage,title,summary,id,fav,submissionDate}) => {
                     <h2>|</h2>
                     <div className='cal'>
                         <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                        <p>{submissionDate}</p>
+                        <p>{dateFormatter(submissionDate)}</p>
                     </div>
 
 

@@ -6,6 +6,7 @@ import img4 from './sources/Figma ipsum.png'
 import img5 from './sources/Lorem ipsum.png'
 import img6 from './sources/InterviewMe.png'
 
+
 let data=[
     {
         title:"Office ipsum",
@@ -19,8 +20,8 @@ let data=[
         OtherLinks:"gthydjkl;",
         id:"44b06e48-4041-2a81-6819-0cb5a7671c7d",
         fav:false,
-        submissionDate:"25 Mar",
-        date:"2023-01-23",
+        submissionDate:1679762784492,
+        
         
         
     },
@@ -36,8 +37,8 @@ let data=[
         OtherLinks:"gthydjkl;",
         id:"44b06e48-4041-2b41-6819-0cb5a7671c7d",
         fav:false,
-        submissionDate:"25 Mar",
-        date:"2023-02-01",
+        submissionDate:1679762082402,
+        
         
         
     },
@@ -53,8 +54,8 @@ let data=[
         OtherLinks:"gthydjkl;",
         id:"44b06e48-4041-2a81-6819-0ba5a7671c7d",
         fav:false,
-        submissionDate:"25 Mar",
-        date:"2023-02-16",
+        submissionDate:1679765782491,
+        
         
         
     },
@@ -70,8 +71,8 @@ let data=[
         OtherLinks:"gthydjkl;",
         id:"44c93e48-4041-2a81-6819-0cb5a7671c7d",
         fav:false,
-        submissionDate:"25 Mar",
-        date:"2023-02-20",
+        submissionDate:1679762342493,
+        
         
         
     },
@@ -88,8 +89,8 @@ let data=[
         OtherLinks:"gthydjkl;",
         id:"44b06e48-4039-2a81-6819-0cb5a7671c7d",
         fav:false,
-        submissionDate:"25 Mar",
-        date:"2023-03-20",
+        submissionDate:1679762723492,
+        
         
         
     },
@@ -105,8 +106,8 @@ let data=[
         OtherLinks:"gthydjkl;",
         id:"44b10e48-4041-2a81-6819-0cb5a7671c7d",
         fav:false,
-        submissionDate:"25 Mar",
-        date:"2023-03-01",
+        submissionDate:1679762702492,
+        
         
         
     },

@@ -16,7 +16,7 @@ const CardContainer = ({data}) => {
             summary={obj.summary}
             coverImage={obj.coverImage}
             id={obj.id}
-            date={obj.date}
+            date={obj.submissionDate}
 
           />
 

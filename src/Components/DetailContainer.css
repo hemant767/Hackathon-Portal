@@ -61,10 +61,13 @@
     font-size: 14px;
     line-height: 17px;
     color: #858585;
-    padding-right: 20px;
+    
 
 
 
+}
+.thonDetail>.date>i{
+    padding-right: 5px;
 }
 
 .thonDetail>h3,h2 {
