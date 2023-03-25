@@ -19,7 +19,7 @@ import './Form.css'
 const validationSchema = yup.object().shape({
   title: yup.string().required("Required").min(2, "Too Short!!").max(20, "Too Long!!"),
   summary: yup.string().required("Required").min(20, "Too Short!!").max(120, "Too Long!!"),
-  description: yup.string().required("Required").min(30, "Too Short!!").max(3000, "Too Long!!"),
+  description: yup.string().required("Required").min(300, "Too Short!!").max(3000, "Too Long!!"),
   
   
   HackathonName: '',
@@ -37,12 +37,10 @@ const validationSchema = yup.object().shape({
 })
 
 const AutoSubmitToken = () => {
-  // Grab values and submitForm from context
+  
   const { values, submitForm } = useFormikContext();
   React.useEffect(() => {
-    // Submit the form imperatively as an effect as soon as form values.token are 6 digits long
-    // if (values.token.length === 6) {
-    //   submitForm();
+    
     
   }, [values, submitForm]);
   return values.description.split("").length;
@@ -55,16 +53,7 @@ const Basic = () => {
   const edit=p.get("edit")
   const pid=p.get("id")
   const navigate=useNavigate()
-  
-  
-
-  
-
-  
-
-  
-  
-
+ 
   useEffect(()=>{
     if(edit){
       let xData=dataById(pid)
@@ -86,14 +75,14 @@ const Basic = () => {
   
  
   const initialValues={
-            title: 'Project 1',
-            summary: 'Heifhdk edbhufhiweu freufhyukislfu',
-            description:'fcyhjgdbeifu 3wyjh3fruke4hyvufkc u3444wfjuyhbyuyb4uygfutyh 3ruwyf',
+            title: '',
+            summary: '',
+            description:'',
             coverImage: null,
-            HackathonName: 'Vsytadguihwe',
-            hackathonStartDate: '2022-11-08',
-            hackathonEndDate: '2022-11-10',
-            GithubLink: 'www.abc.com',
+            HackathonName: '',
+            hackathonStartDate: '',
+            hackathonEndDate: '',
+            GithubLink: '',
             OtherLinks: '',
            
   }
