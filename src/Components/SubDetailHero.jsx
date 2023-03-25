@@ -73,10 +73,10 @@ const SubDetailHero = ({coverImage,title,summary,id,fav,submissionDate}) => {
 
             <div className='Change'>
                 <Link className='Change' to={`/submission?edit=true&id=${id}`}>
-                <button><i class="fa fa-pencil" aria-hidden="true"></i>Edit</button>
+                <button ><i class="fa fa-pencil" aria-hidden="true"></i>Edit</button>
                 </Link>
                 
-                <button onClick={()=>handleDelete()}><i class="fa fa-trash-o fa-lg"></i>Delete</button>
+                <button  onClick={()=>handleDelete()}><i class="fa fa-trash-o fa-lg"></i>Delete</button>
                
             </div>
         </div>
