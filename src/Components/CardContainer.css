@@ -1,0 +1,9 @@
+.Container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding:0 10%;
+    background: #F5F5F5;
+    padding-top: 50px;
+    
+}

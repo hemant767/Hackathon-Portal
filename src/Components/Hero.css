@@ -1,0 +1,96 @@
+.Hero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height:300px;
+    background: #003145;
+    
+}
+
+.box{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.bulb{
+    z-index: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.wave{
+    position: absolute;
+    width: 100%;
+    height: 210px;
+    left: calc(50% - 1440px/2);
+    left:0px;
+    top: 150px;
+    opacity: 0.75;
+    overflow: hidden;
+    
+}
+
+h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 63px;
+
+
+    color: #FFFFFF;
+}
+
+.box>p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+
+
+    color: #FFFFFF;
+}
+
+.button{
+
+    
+    padding: 12px 18px;
+    width: max-content;
+    border-radius: 8px;
+    z-index: 10000;
+    
+    background: #44924C;
+
+    width: max-content;
+    height: 50px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 175%;
+    border: none;
+    
+    text-decoration: none;
+
+    color: #FFFFFF;
+}
+
+
+/*
+
+flex-direction:row;
+justify-content:horizontal;
+align-item:vertical;
+
+
+flex-direction:column;
+justify-content:vertical;
+align-item:horizontal;
+
+*/

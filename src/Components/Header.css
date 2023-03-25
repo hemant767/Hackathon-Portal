@@ -1,0 +1,17 @@
+.Nav{
+    display:flex;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-height: 100px;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    padding-top: 10px;
+}
+
+.Nav>img{
+    padding-left: 10%;
+
+}
+

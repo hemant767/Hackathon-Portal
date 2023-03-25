@@ -1,0 +1,97 @@
+.subContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sub,.filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+
+}
+
+
+
+.filter>.search {
+
+    outline: none;
+    border-radius: 24px;
+    border: 1px solid #666666;
+    padding: 0px 5px;
+
+}
+
+
+
+
+.search>input,
+.sub>h3,
+option ,select{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+
+    /* identical to box height */
+
+    /* Celestial Grey/CG 500 */
+    color: #666666;
+
+
+    border: none;
+    margin-left: 5px;
+    outline: none;
+}
+
+.search>i {
+    color: #666666;
+    font-weight: 50;
+    font-size: 15px;
+}
+
+.sub>h3 {
+    width: 134px;
+    height: 26px;
+    width: fit-content;
+    padding: 0 5px;
+
+
+
+    text-align: center;
+
+
+    color: #333333;
+
+
+}
+
+/* .sub>h3:hover {
+    border-bottom: 2px solid #44924C;
+} */
+
+
+.roll {
+    width: 25%;
+
+}
+
+.formRight select {
+
+    border-radius: 24px;
+    border: 1px solid #666666;
+    padding: 0px 5px;
+    width: 100%
+}
+
+option {
+    color: #333333;
+
+
+}
